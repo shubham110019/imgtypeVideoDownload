@@ -13,7 +13,7 @@ router.post('/getVideoUrls', async (req, res) => {
         const videoUrls = await ndown(url);
         res.json({ success: true, videoUrls: videoUrls });
 
-        console.log(videoUrls);
+        // console.log(videoUrls);
     } catch (error) {
         res.json({ success: false, message: 'Error retrieving video URLs.' });
     }
